@@ -17,14 +17,10 @@ App.InfoBlock = DS.Model.extend({
   content_type: DS.attr('string'),
   
   content: DS.hasMany('App.Content')
-  //content: function() {
-  //  return App.Content.find({ content_type: "Peter" });
-  ///  return this.get('firstName') + ' ' + this.get('lastName');
- // }//.property('firstName', 'lastName')
 });
 
 // Content for Info Block
-App.InfoBlock = DS.Model.extend({
+App.Content = DS.Model.extend({
   id: DS.attr('number'),
   title: DS.attr('string'),
   description: DS.attr('string'),
@@ -35,12 +31,9 @@ App.InfoBlock = DS.Model.extend({
   block: DS.belongsTo('App.InfoBlock')
 });
 
-
-
-
-
+// Routes
 App.Router.map(function() {
-  this.resource('todos', { path: '/' });
+  this.resource('app', { path: '/' });
 });
 
 App.IndexRoute = Ember.Route.extend({
