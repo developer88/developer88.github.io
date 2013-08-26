@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>some Title that i have not come up with yet.</title>
+  <title>{{title}}</title>
 
   <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
   <link rel="stylesheet" href="css/normalize.css" />
@@ -16,6 +16,10 @@
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
+  <!-- views -->
+  <script type="text/x-handlebars" data-template-name="choose_path">
+    Hello, <b>{{view.name}}</b>!
+  </script>  
 </head>
 <body>
 
@@ -32,12 +36,6 @@
   <footer>
     &copy;2013 Eremin Andrey
   </footer>
-
-  <!-- views -->
-
-  <script type="text/x-handlebars" data-template-name="choose_a_path">
-    Hello, <b>{{view.name}}</b>!
-  </script>  
 
   <!-- body content here -->
 
