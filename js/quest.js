@@ -1,9 +1,10 @@
 var quest_experiment = new function() {
     this.quest = undefined;
     this.name = undefined;
+    // mm.dd.yy
     this.quests = [
     	{ number: 1, question: "Проверка 1?", text: "Проверка текста", answer: 42, start_date: undefined },
-    	{ number: 2, question: "Проверка 2?", text: "Проверка текста", answer: 43, start_date: "13.10.2013 15:43:12" }
+    	{ number: 2, question: "Проверка 2?", text: "Проверка текста", answer: 43, start_date: "10.13.2013 15:43:12" }
    	];
     this.initialize = function () {
     	// initialize quest engine
