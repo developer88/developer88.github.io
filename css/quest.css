@@ -47,5 +47,6 @@ body {
 }
 
 .error-message {
-	display: none;
+	width: 400px;
+	color: white;
 }
