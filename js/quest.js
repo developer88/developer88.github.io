@@ -42,6 +42,10 @@ var quest_experiment = new function() {
     	this.error_message(null, false);
     	//
     	var current = this.quests[this.quest.progress];
+    	if(current == undefined) {
+    		this.error_message("Ура! Все пройдено! Купи себе пирожок.", true);
+    		return true;
+    	}
     	// 
     	if(this.can_start(current['start_date']) == true) {
     		$('.quest-title').html(current['question']);
@@ -51,8 +55,8 @@ var quest_experiment = new function() {
     	} else {
     		$('.quest-user-block').addClass('hidden');
     		var d = this.what_date(current['start_date']);
-    		var date_str = current['start_date'] == undefined ? '' : (d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear());
-    		this.error_message("Пока для тебя ничего нет! Приходи "+date_str, true)
+    		var date_str = current['start_date'] == undefined ? '' : " Приходи "+(d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear());
+    		this.error_message("Пока для тебя ничего нет!"+date_str, true);
     	}
     };
     this.error_message = function (data, show) {
