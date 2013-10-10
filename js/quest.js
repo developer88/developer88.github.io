@@ -55,7 +55,7 @@ var quest_experiment = new function() {
     	} else {
     		$('.quest-user-block').addClass('hidden');
     		var d = this.what_date(current['start_date']);
-    		var date_str = current['start_date'] == undefined ? '' : " Приходи "+(d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear());
+    		var date_str = current['start_date'] == undefined ? '' : " Приходи после "+(d.getDate()+"."+(d.getMonth()+1)+"."+d.getFullYear());
     		this.error_message("Пока для тебя ничего нет!"+date_str, true);
     	}
     };
