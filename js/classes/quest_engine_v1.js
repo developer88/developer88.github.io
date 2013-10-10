@@ -9,7 +9,7 @@ var QuestEngine = function() {
         if(progress_arr == undefined) { return true; }
         for(i = 0; i < progress_arr.length; i++) {
             if(progress_arr[i] == this.quests[i]['answer']) {
-                this.progress = i;
+                this.progress = i+1;
                 this.responces.push(progress_arr[i]);
             }
         }
