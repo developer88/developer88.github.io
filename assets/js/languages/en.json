@@ -1,9 +1,14 @@
 {
   "site-title": "Andrey Eremin",
   "welcome-title": "I am Andrey Eremin",
+
 	"navigation-specialities": "Specialties",
 	"navigation-profile": "Profile",
   "navigation-portfolio": "Portfolio",
   "navigation-contact": "Contact",
-  "learn-more": "Learn More"
+  "navigation-home": "Home",
+
+  "learn-more": "Learn More",
+
+  
 }
