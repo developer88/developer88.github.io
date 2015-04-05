@@ -10,5 +10,21 @@
 
   "learn-more": "Learn More",
 
+  "link-portfolio": "My Portfolio",
+  "link-cv": "Download CV",
+
+  "tooltip-g-plus": "Follow me on Google Plus",
+  "tooltip-facebook": "Follow me on Facebook",
+  "tooltip-youtube": "Follow me on YouTube",
+  "tooltip-linkedin": "Follow me on LinkedIn",
+
+  "heading-contacts": "Contact Me<span class='main-color'>6</span>",
+
+  "me-fullname": "Andrey Eremin",
+  "me-address1": "143900, Balashikha, Russia",
+  "me-phone": "89250279211",
+  "me-available1": "I am available for freelance.",
+  "me-available2": "Can't wait for the next exciting project! Could it be yours?"
+
   
 }

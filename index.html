@@ -29,8 +29,7 @@
 		<!-- ==============================================
 		Fonts
 		=============================================== -->
-		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700' rel='stylesheet' type='text/css'>
-		
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700' rel='stylesheet' type='text/css'>		
 		
 		<!-- ==============================================
 		JS
@@ -326,9 +325,11 @@
 							<p class="margin-top scrollimation fade-right">I am Jonathan Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic & Web Design, from the University of Pasadena. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p>
 							
 							<p class="lead margin-top scrollimation fade-left">Creating is not just a job for me, it's a passion. </p>
-							<p class="scrollimation fade-left"><a class="btn btn-dc btn-main-color scrollto" href="#portfolio">My Portfolio</a></p>
 							<p class="scrollimation fade-left">
-							  <a class="btn btn-dc btn-download btn-main-color scrollto" target="_blank" href="/files/cv.eng.pdf">My CV</a>
+							  <a class="btn btn-dc btn-main-color scrollto" href="#portfolio" data-i18n="link-portfolio">My Portfolio</a>
+							</p>
+							<p class="scrollimation fade-left">
+							  <a class="btn btn-dc btn-download btn-main-color scrollto" target="_blank" href="/files/cv.eng.pdf" data-i18n="link-cv">My CV</a>
 							</p>
 							
 						</div>
@@ -722,33 +723,39 @@
 			
 				<div class="container">
 				
-					<h1 class="section-title">Contact Me<span class="main-color">6</span></h1>
+					<h1 class="section-title" data-i18n-heading="heading-contacts">Contact Me<span class="main-color">6</span></h1>
 					
 					<div class="row">
 					
 						<div class="col-sm-6 col-md-5 scrollimation fade-right">
 						
 							<p class="lead">
-							  I am available for freelance. <br/>Can't wait for the next exciting project! Could it be yours?</p>
+							  <span data-i18n="me-available1">I am available for freelance.</span><br/>
+							  <span data-i18n="me-available2">
+							    Can't wait for the next exciting project! Could it be yours?
+							  </span>
+							</p>
 						
 							<p>
-								John Doe<br/>
-								W325 State Road 123<br/>
-								Mondovi, WI(Wisconsin) 98746-54321<br/>
-								(123) 456 - 7890 <br/>
+								<span data-i18n="me-fullname">Andrey Eremin</span><br/>
+								<span data-i18n="me-address1">143900, Balashikha, Russia</span><br/>
+								<span data-i18n="me-phone">89250279211</span><br/>
 							</p>
 						
 							<div class="social-links">
-								<a href="#"><i class="fa fa-fw fa-twitter"></i></a>
-								<a href="#"><i class="fa fa-fw fa-facebook-square"></i></a>
-								<a href="#"><i class="fa fa-fw fa-linkedin-square"></i></a>
+								<a href="https://www.youtube.com/user/Dsoft88"><i class="fa fa-fw fa-youtube-square"></i></a>
+								<a href="https://www.facebook.com/dsoft88"><i class="fa fa-fw fa-facebook-square"></i></a>
+								<a href="https://www.linkedin.com/profile/view?id=210149225&trk=hp-identity-name"><i class="fa fa-fw fa-linkedin-square"></i></a>
+								<a href="https://plus.google.com/u/0/+AndreyEreminV/about"><i class="fa fa-fw fa-google-plus-square"></i></a>
 							</div>
 						
-							<p><a class="mail-styled" href="mailto:mail@example.com">contact@johndoe.com</a></p>
+							<p>
+							  <a class="mail-styled" href="mailto:dsoft88@gmail.com">dsoft88@gmail.com</a>
+							</p>
 						
 						</div>
 					
-						<!--=== Contact Form ===-->
+						<!--=== Contact Form ===
 
 						<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="contact.php" method="post" novalidate>
 							
@@ -757,26 +764,26 @@
 									<input id="contact-name" name="contactName" class="form-control requiredField" type="text" data-error-empty="is required">
 									<label class="control-label" for="contact-name">Name</label>
 								</div>
-							</div><!-- End name input -->
+							</div>
 							
 							<div class="form-group">
 								<div class="controls">
 									<input id="contact-mail" name="email" class="form-control requiredField" type="email" data-error-empty="is required" data-error-invalid="is invalid">
 									<label class="control-label" for="contact-mail">Email</label>
 								</div>
-							</div><!-- End email input -->
+							</div>
 							
 							<div class="form-group">
 								<div class="controls">
 									<textarea id="contact-message" name="comments" class="form-control requiredField" rows="6" data-error-empty="is required"></textarea>
 									<label class="control-label" for="contact-message">Message</label>
 								</div>
-							</div><!-- End textarea -->
+							</div>
 							
 							<button name="submit" type="submit" class="btn" data-error-message="Please fill the required fields" data-sending-message="Sending Message" data-ok-message="Your Message has been sent!">Send It</button>
 							<input type="hidden" name="submitted" id="submitted" value="true" />
 							
-						</form><!-- End contact-form -->
+						</form>-- End contact-form -->
 						
 					</div>
 					
@@ -819,9 +826,18 @@
 					
 						<div class="col-sm-2 text-right social-links">
 						
-							<a href="#" data-toggle="tooltip" title="Follow me on Twitter"><i class="fa fa-fw fa-twitter"></i></a>
-							<a href="#" data-toggle="tooltip" title="Follow me on Facebook"><i class="fa fa-fw fa-facebook"></i></a>
-							<a href="#" data-toggle="tooltip" title="Follow me on LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+							<a href="https://www.youtube.com/user/Dsoft88" data-i18n-tooltip="tooltip-youtube" data-toggle="tooltip" title="Follow me on YouTube">
+							  <i class="fa fa-fw fa-youtube"></i>
+							</a>
+							<a href="https://www.facebook.com/dsoft88" data-toggle="tooltip" title="Follow me on Facebook" data-i18n-tooltip="tooltip-facebook">
+							  <i class="fa fa-fw fa-facebook"></i>
+							</a>
+							<a href="https://www.linkedin.com/profile/view?id=210149225&trk=hp-identity-name" data-toggle="tooltip" title="Follow me on LinkedIn" data-i18n-tooltip="tooltip-linkedin">
+							  <i class="fa fa-fw fa-linkedin"></i>
+							</a>
+							<a href="https://plus.google.com/u/0/+AndreyEreminV/about" data-toggle="tooltip" title="Follow me on Google Plus" data-i18n-tooltip="tooltip-g-plus">
+							  <i class="fa fa-fw fa-google-plus"></i>
+							</a>
 						
 						</div>
 						

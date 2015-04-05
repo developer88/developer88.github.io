@@ -4,6 +4,16 @@ $(document).ready(function(){
 	==============================================*/
 	var loadTime = 500;
 	var defaultLocale = 'en';
+	var cvLinks = {'en': "/files/cv.eng.pdf", 'ru': "/files/cv.rus.pdf"}
+
+	/*============================================
+	CV
+	==============================================*/
+
+	function changeCvLink() {
+		var i18n = $.i18n();
+		$('[data-i18n=link-cv]').attr('href', cvLinks[i18n.locale]);
+	}
 
   /*============================================
 	I18n
@@ -17,7 +27,16 @@ $(document).ready(function(){
 		i18n.load( 'assets/js/languages/' + i18n.locale + '.json', i18n.locale ).done(function() {
 			$('[data-i18n]').each(function() { $(this).i18n(); });
 			setLocale(locale);
+			loadLocaleDependableContent();			
 	  });
+	}
+
+	function loadTranslationsManually(key, attr) {
+		var strippedKey = key.slice(5);
+		$('[' + key + ']').each(function(){	
+		  if(!attr) $(this).html($.i18n( $(this).data(strippedKey) ));	
+			if(attr) $(this).attr(attr, $.i18n( $(this).data(strippedKey) ));
+		});
 	}
 
 	function getLocale() {
@@ -27,6 +46,15 @@ $(document).ready(function(){
 	function setLocale(locale) {
 		$.cookie('dsoft_locale', locale, { expires: 30 });
 	}
+
+
+	function loadLocaleDependableContent() {
+    changeCvLink();
+		loadTranslationsManually('data-i18n-tooltip', 'title');
+		loadTranslationsManually('data-i18n-heading');
+		loadTooltips();
+	}
+
 
 	/*============================================
 	Page Preloader
@@ -316,7 +344,9 @@ $(document).ready(function(){
 	/*============================================
 	Tooltips
 	==============================================*/
-	$("[data-toggle='tooltip']").tooltip({container: 'body'});
+	function loadTooltips() {
+	  $("[data-toggle='tooltip']").tooltip({container: 'body'});
+	}
 	
 	/*============================================
 	Waypoints Animations
