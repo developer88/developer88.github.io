@@ -39,5 +39,20 @@
   "about-fullname": "Andrey Eremin",
   "about-position": "Full Stack Developer",
   "about-bio": "I am Jonathan Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic & Web Design, from the University of Pasadena. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.",
-  "about-slogan": "Creating is not just a job for me, it's a passion."  
+  "about-slogan": "Creating is not just a job for me, it's a passion.",
+
+  "services-frontend": "Front End",
+  "services-backend": "Back End",
+  "backend-ruby": "Ruby",
+  "backend-php": "PHP",
+  "backend-other": "Other",
+  "backend-ruby-description": "Great knowledge and experience in Ruby and in some of its famous gems like Rails, Rspec, Cucumber, Mina, Haml etc.",
+  "backend-php-description": "Quite good knowledge of PHP stack with experience in developing software using CodeIgniter, Bitrix and Smarty.",
+  "backend-other-description": "Things like PostgreSQL, MySQL, Git, Sphinx, RESTful API, TDD, Agile are not just empty words for me.",
+  "frontend-javascript": "JavaScript",
+  "frontend-javascript-description": "Great knowledge in JavaScript itself as well as in some frameworks and technologies like AngularJS, jQuery, CoffeeScript, Jasmine.",
+  "frontend-css": "CSS",
+  "frontend-css-description": "Got used to work with SaSS, Haml (or slim if it is about 'Rails'), Bootstrap.",
+  "frontend-html": "Html5"
+
 }
