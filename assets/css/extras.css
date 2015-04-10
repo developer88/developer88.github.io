@@ -1,0 +1,12 @@
+.contacts-to-right {
+  text-align: right;
+  padding-right: 40px;
+}
+
+.contacts-to-left {
+  padding-left: 40px;
+}
+
+.contacts-map {
+  margin-top: 6px;
+}
