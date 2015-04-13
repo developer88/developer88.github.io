@@ -54,6 +54,8 @@
   "frontend-css": "CSS",
   "frontend-css-description": "Got used to work with SaSS, Bootstrap and Ionic.",
   "frontend-html": "Html5",
-  "frontend-html5-description": "Simple as Haml (or slim if it is about 'Rails')"
+  "frontend-html5-description": "Simple as Haml (or slim if it is about 'Rails')",
+
+  "projects-gyh-title": "Get Your Hero"
 
 }
