@@ -38,8 +38,8 @@
   "about-thats-me": "That's Me!",
   "about-fullname": "Andrey Eremin",
   "about-position": "Full Stack Developer",
-  "about-bio": "I am Jonathan Doe, a twenty five year old designer from NY. I have graduated with a Bachelor degree of Graphic & Web Design, from the University of Pasadena. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.",
-  "about-slogan": "Creating is not just a job for me, it's a passion.",
+  "about-bio": "I am Andrey Eremin, a twenty six years old developer from Russia. I have graduated with a Master degree of applied IT. I love my current prfession and this is not only my job - this is also my hobby.",
+  "about-slogan": "Creating is not just a job for me, it's my life.",
 
   "services-frontend": "Front End",
   "services-backend": "Back End",
@@ -56,6 +56,23 @@
   "frontend-html": "Html5",
   "frontend-html5-description": "Simple as Haml (or slim if it is about 'Rails')",
 
-  "projects-gyh-title": "Get Your Hero"
+  "skills-frontend": "Front End",
+  "skills-backend": "Back End",
+  "skills-support": "Support",
+  "skills-hig-score": "High Score",
+
+  "projects-technologies": "Technologies: ",
+
+  "projects-gyh-title": "Get Your Hero",
+  "projects-gyh-description-short": "StartUp operated in Spain, France and Italy. Worked on API, Admin Control Panel, Partner Portal. Did refactoring, optimization and more.",
+  "projects-gyh-tech": "Ruby on Rails, Haml, Sass, CoffeeScript, AngularJs, RailsAdmin, Spree, Swagger, MySQL",
+  "projects-gyh-description": "",
+  "projects-hh-title": "Yzzy",
+  "projects-hh-description-short": "Internal HeadHunter's project. Worked on profile part (Frontend) and did some refactoring and developed RESTful API (Backend).",
+  "projects-hh-description": "",
+  "projects-hh-tech": "Ruby on Rails, Slim, Sass, AngularJs, MongoDB, PostgreSQL, Sphinx"
+
+
+  
 
 }
