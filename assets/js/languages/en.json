@@ -31,7 +31,7 @@
 
   "me-fullname": "Andrey Eremin",
   "me-address1": "143900, Balashikha, Russia",
-  "me-phone": "89250279211",
+  "me-phone": "+79250279211",
   "me-available1": "I am available for freelance.",
   "me-available2": "Can't wait for the next exciting project! Could it be yours?",
 
@@ -73,6 +73,6 @@
   "projects-hh-tech": "Ruby on Rails, Slim, Sass, AngularJs, MongoDB, PostgreSQL, Sphinx"
 
 
-  
+
 
 }
