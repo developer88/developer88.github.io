@@ -27,7 +27,7 @@
   "heading-profile": "My Profile<span class='main-color'>3</span>",
   "heading-portfolio": "My portfolio<span class='main-color'>4</span>",
   "heading-reference": "Feedback<span class='main-color'>5</span>",
-  "heading-me": "<span class='main-color'>D</span>esigner, <span class='main-color'>D</span>eveloper, <span class='main-color'>D</span>reamer",
+  "heading-me": "<span class='main-color'>F</span>ull <span class='main-color'>S</span>tack <span class='main-color'>D</span>eveloper",
 
   "me-fullname": "Andrey Eremin",
   "me-address1": "143900, Balashikha, Russia",
@@ -52,7 +52,8 @@
   "frontend-javascript": "JavaScript",
   "frontend-javascript-description": "Great knowledge in JavaScript itself as well as in some frameworks and technologies like AngularJS, jQuery, CoffeeScript, Jasmine.",
   "frontend-css": "CSS",
-  "frontend-css-description": "Got used to work with SaSS, Haml (or slim if it is about 'Rails'), Bootstrap.",
-  "frontend-html": "Html5"
+  "frontend-css-description": "Got used to work with SaSS, Bootstrap and Ionic.",
+  "frontend-html": "Html5",
+  "frontend-html5-description": "Simple as Haml (or slim if it is about 'Rails')"
 
 }
