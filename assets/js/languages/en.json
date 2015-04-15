@@ -65,7 +65,7 @@
 
   "projects-gyh-title": "Get Your Hero",
   "projects-gyh-description-short": "StartUp operated in Spain, France and Italy. Worked on API, Admin Control Panel, Partner Portal. Did refactoring, optimization and more.",
-  "projects-gyh-tech": "Ruby on Rails, Haml, Sass, CoffeeScript, AngularJs, RailsAdmin, Spree, Swagger, MySQL",
+  "projects-gyh-tech": "Ruby on Rails, Haml, Sass, CoffeeScript, AngularJs, RailsAdmin, RefineryCMS, Swagger, MySQL",
   "projects-gyh-description": "",
   "projects-hh-title": "Yzzy",
   "projects-hh-description-short": "Internal HeadHunter's project. Worked on profile part (Frontend) and did some refactoring and developed RESTful API (Backend).",
