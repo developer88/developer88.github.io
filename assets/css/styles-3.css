@@ -306,13 +306,13 @@ hr{
 	text-align: center;
 	background: none;
 	-webkit-transition: color .2s ease-out, padding .3s ease-out;
-	transition: color .2s ease-out, padding .3s ease-out; 
+	transition: color .2s ease-out, padding .3s ease-out;
 }
 
 #site-nav .active a,
 #site-nav a:hover,
 #site-nav a:focus{
-	padding-top: 4px;
+	/*padding-top: 4px;*/
 	padding-bottom:10px;
 	color:#299ED9 !important;
 	background: none;
@@ -1075,11 +1075,11 @@ hr{
 }
 
 .testimonial-controls .previous{
-	padding-left:12px; 
+	padding-left:12px;
 }
 
 .testimonial-controls .next{
-	padding-left:15px; 
+	padding-left:15px;
 }
 
 .testimonial-controls span:hover{
@@ -1609,15 +1609,15 @@ hr{
 	.container{
 		width:1500px;
 	}
-	
+
 	#project-viewer .container{
 		width:1170px;
 	}
-	
+
 }
 
 @media (max-width:1499px){
-	
+
 	#home{
 		min-height:810px;
 		margin-bottom:-64px;
@@ -1631,7 +1631,7 @@ hr{
 	#home .row{
 		top:12%;
 	}
-	
+
 	.skills .plus-symbol:after,
 	.skills .equal-symbol:after{
 		right:-60px;
@@ -1639,11 +1639,11 @@ hr{
 }
 
 @media (max-width:1199px){
-	
+
 	.push-down{
 		margin-top:60px;
 	}
-			
+
 	#home{
 		min-height:768px;
 		margin-bottom:-64px;
@@ -1657,12 +1657,12 @@ hr{
 	#home .row{
 		top:15%;
 	}
-	
+
 	#home .header-img{
 		width:800px;
 		margin-left:-400px;
 	}
-	
+
 	.service-item{
 		padding:0 15px;
 	}
@@ -1673,11 +1673,11 @@ hr{
 }
 
 @media (max-width:991px){
-		
+
 	.push-down{
 		margin-top:0;
 	}
-		
+
 	#home{
 		min-height:810px;
 		margin-bottom:-64px;
@@ -1687,11 +1687,11 @@ hr{
 		padding-top: 100px;
 		min-height:810px;
 	}
-			
+
 	#home .row{
 		top:20%;
 	}
-	
+
 	#home .header-img{
 		width:760px;
 		margin-left:-380px;
@@ -1719,7 +1719,7 @@ hr{
 	.skills .equal-symbol:after{
 		display: none;
 	}
-	
+
 	#contact .mail-styled{
 		font-size: 28px;
 	}
@@ -1736,16 +1736,16 @@ hr{
 }
 
 @media (max-width:767px){
-	
+
 	.big-padding{
 		padding:80px 0;
 	}
-	
+
 	.push-down{
 		margin-bottom:60px;
 		text-align: center;
 	}
-	
+
 	.section-title{
 		margin-bottom: 30px;
 		font-size: 38px;
@@ -1764,33 +1764,33 @@ hr{
 	.row-title{
 		font-size: 24px;
 	}
-	
+
 	.lead{
 		margin-bottom: 30px;
 		font-size: 24px;
 	}
-	
+
 	.btn-dc{
 		padding:8px 40px;
 		font-size:18px;
 	}
-	
+
 	.btn-dc:hover{
 		padding-right:50px;
 	}
-	
+
 	.btn-dc:after{
 		margin-left:5px;
 	}
-	
+
 	.btn-dc:hover:after{
 		margin-left:15px;
 	}
-	
+
 	.icon-bar{
 		background: #39444C;
 	}
-	
+
 	#main-nav .container, #main-nav.scrolled .container{
 		padding-top:5px;
 		padding-bottom:5px;
@@ -1800,15 +1800,15 @@ hr{
 		background: #fff;
 		border-bottom:1px solid #b9c4cC;
 	}
-	
+
 	.navbar > .container .navbar-brand{
 		padding: 5px 0 5px 15px;
 	}
-	
+
 	#main-nav .navbar-brand:after{
 		display: none !important;
 	}
-	
+
 	#site-nav a{
 		padding:10px 30px;
 		font-size: 18px;
@@ -1821,11 +1821,11 @@ hr{
 		color:#299ED9 !important;
 		background: none;
 	}
-	
+
 	#site-nav a .fa{
 		display: none;
 	}
-	
+
 	#home{
 		min-height:480px;
 		margin-bottom:0;
@@ -1834,11 +1834,11 @@ hr{
 	#home .container{
 		min-height:480px;
 	}
-			
+
 	#home .row{
 		top:80px;
 	}
-	
+
 	#home h1{
 		font-size: 42px;
 	}
@@ -1846,17 +1846,17 @@ hr{
 	#home h2{
 		font-size: 21px;
 	}
-	
+
 	#home .header-img{
 		width:100%;
 		left:0;
 		margin-left:0;
 	}
-	
+
 	.btn-group{
 		margin-bottom: 40px;
 	}
-	
+
 	.btn-group .btn{
 		padding:7px 30px;
 	}
@@ -1864,47 +1864,47 @@ hr{
 	#filter-works{
 		margin-bottom: 60px;
 	}
-	
+
 	#filter-works .btn{
 		float:none;
 		margin:2px 0;
 		border-radius: 0 !important;
 	}
-	
+
 	#filter-works .project-count{
 		display: none;
 	}
-	
+
 	.cta{
 		padding:80px 0;
 	}
-	
+
 	.cta p{
 		margin-bottom: 40px;
 		font-size: 24px;
 	}
-	
+
 	.service-item{
 		margin-bottom: 50px;
 	}
-	
+
 	#skills{
 		background-image: none;
 	}
-	
+
 	#twitter-feeds .tweet{
 		font-size: 21px;
 	}
-	
+
 	.project-item{
 		max-width:360px;
 		margin: 2px auto !important;
 	}
-	
+
 	#project-viewer-content {
 		padding-top: 80px;
 	}
-	
+
 	#close-project-viewer{
 		padding:0 10px;
 		right:50%;
@@ -1933,7 +1933,7 @@ hr{
 		max-width: 260px;
 		margin: 40px auto !important;
 	}
-	
+
 	#testimonials .media-left,
 	#testimonials .media-right{
 		display: none;
@@ -1943,36 +1943,36 @@ hr{
 	#testimonials .media-body:before{
 		display: none !important;
 	}
-	
+
 	#testimonials .media-body{
 		padding:15px 30px;
 		border-width: 1px;
 	}
-	
+
 	#testimonials .testimonial{
 		font-size: 16px;
 	}
-	
+
 	#testimonials .media{
 		margin-bottom: 40px;
 	}
-	
+
 	#contact-form .contact-form-message{
 		margin-top: 40px;
 	}
-	
+
 	#main-footer{
 		padding:30px 0 20px;
 	}
-	
+
 	#main-footer .social-links{
 		margin-top: 20px;
 		text-align: center;
 	}
-	
+
 	#main-footer .logo-link img{
 		margin:0 auto 15px;
 	}
-	
+
 }
 

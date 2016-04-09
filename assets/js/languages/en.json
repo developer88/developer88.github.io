@@ -70,9 +70,10 @@
   "projects-hh-title": "Yzzy",
   "projects-hh-description-short": "Internal HeadHunter's project. Worked on profile part (Frontend) and did some refactoring and developed RESTful API (Backend).",
   "projects-hh-description": "",
-  "projects-hh-tech": "Ruby on Rails, Slim, Sass, AngularJs, MongoDB, PostgreSQL, Sphinx"
-
-
+  "projects-hh-tech": "Ruby on Rails, Slim, Sass, AngularJs, MongoDB, PostgreSQL, Sphinx",
+  "projects-xing-title": "Xing",
+  "projects-xing-description-short": "The most popular business social network in German-speaking countries. Worked on lots of high-loaded projects. Did refactoring, rewrote API.",
+  "projects-xing-tech": "Ruby on Rails, Sass, CoffeeScript, Backbone, Swagger, MySQL, ionic, Perl"
 
 
 }
