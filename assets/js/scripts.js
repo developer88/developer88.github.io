@@ -74,7 +74,6 @@ $(document).ready(function() {
 			tweetsHtml = '<ul class="slides">';
 
 		while(n < x) {
-			console.log(response.posts[n]);
 			tweetsHtml += '<li>' + stripHTML(response.posts[n].excerpt) + ' <a href="' + response.posts[n].url + '" target="_blank">Read more</a></li>';
 			n++;
 		}
