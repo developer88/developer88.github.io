@@ -1,10 +1,11 @@
-$(document).ready(function(){
-  /*============================================
+$(document).ready(function() {
+
+    /*============================================
 	Settings
 	==============================================*/
 	var loadTime = 500;
 	var defaultLocale = 'en';
-	var cvLinks = {'en': "/files/cv.eng.pdf", 'ru': "/files/cv.rus.pdf"}
+	var cvLinks = {'en': "/files/cv.eng.pdf", 'ru': "/files/cv.rus.pdf"};
 
 	/*============================================
 	CV
@@ -15,15 +16,15 @@ $(document).ready(function(){
 		$('[data-i18n=link-cv]').attr('href', cvLinks[i18n.locale]);
 	}
 
-  /*============================================
+    /*============================================
 	I18n
 	==============================================*/
 	$.i18n.debug = true;
 
-  function loadLocale(locale) {
-	var i18n = $.i18n();
+    function loadLocale(locale) {
+		var i18n = $.i18n();
 
-	i18n.locale = locale;
+		i18n.locale = locale;
 		i18n.load( 'assets/js/languages/' + i18n.locale + '.json', i18n.locale ).done(function() {
 			$('[data-i18n]').each(function() { $(this).i18n(); });
 			setLocale(locale);
@@ -49,10 +50,50 @@ $(document).ready(function(){
 
 
 	function loadLocaleDependableContent() {
-    changeCvLink();
+        changeCvLink();
 		loadTranslationsManually('data-i18n-tooltip', 'title');
 		loadTranslationsManually('data-i18n-heading');
 		loadTooltips();
+	}
+
+    /*============================================
+	Wordpress posts
+	==============================================*/
+
+	function loadWPPosts() {
+		jQuery.get("http://code.aeremin.ru/?json=1", function(data) { handleWPPosts(data); });
+	}
+
+	function handleWPPosts(response){
+		if (!response.posts) {
+			return false;
+		}
+
+		var x = response.posts.length,
+			n = 0,
+			tweetsHtml = '<ul class="slides">';
+
+		while(n < x) {
+			console.log(response.posts[n]);
+			tweetsHtml += '<li>' + stripHTML(response.posts[n].excerpt) + ' <a href="' + response.posts[n].url + '" target="_blank">Read more</a></li>';
+			n++;
+		}
+
+		tweetsHtml += '</ul>';
+		$('#twitter-slider').html(tweetsHtml);
+
+		$('#twitter-slider').flexslider({
+			slideshowSpeed: 5000,
+			useCSS: true,
+			directionNav: false,
+			pauseOnAction: false,
+			pauseOnHover: true,
+			smoothHeight: false
+		});
+	}
+
+	function stripHTML(dirtyString) {
+      return $(dirtyString).text();
 	}
 
 	/*============================================
@@ -61,6 +102,7 @@ $(document).ready(function(){
 
 	$(window).load(function(){
 		loadLocale(getLocale());
+		loadWPPosts();
 		$('#page-loader').fadeOut(loadTime);
 	});
 
@@ -230,7 +272,7 @@ $(document).ready(function(){
 		$('#project-viewer').scrollTop(0);
 
 		/*Show-Hide Nav butttons*/
-		if($('.project-item.active').index()==0){$('#project-viewer .previous-project').addClass('hidden');}
+		if($('.project-item.active').index() === 0){$('#project-viewer .previous-project').addClass('hidden');}
 		else{$('#project-viewer .previous-project').removeClass('hidden');}
 
 		if($('.project-item.active').index()== ($('.project-item').length -1)){$('#project-viewer .next-project').addClass('hidden');}
@@ -311,6 +353,7 @@ $(document).ready(function(){
 			smoothHeight: false
 		});
 	}
+
 	/*============================================
 	Testimonials
 	==============================================*/
