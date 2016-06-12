@@ -10,3 +10,7 @@
 .contacts-map {
   margin-top: 6px;
 }
+
+.page-loader {
+    display: none !important;
+}
