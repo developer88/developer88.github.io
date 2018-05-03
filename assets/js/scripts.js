@@ -27,7 +27,7 @@ $(document).ready(function() {
 		i18n.locale = locale;
 		i18n.load( 'assets/js/languages/' + i18n.locale + '.json', i18n.locale ).done(function() {
 			$('[data-i18n]').each(function() { $(this).i18n(); });
-			setLocale(locale);
+			//setLocale(locale);
 			loadLocaleDependableContent();
 		});
 	}
@@ -41,11 +41,11 @@ $(document).ready(function() {
 	}
 
 	function getLocale() {
-		return ($.cookie('dsoft_locale') || defaultLocale);
+		//return ($.cookie('dsoft_locale') || defaultLocale);
 	}
 
 	function setLocale(locale) {
-		$.cookie('dsoft_locale', locale, { expires: 30 });
+		//$.cookie('dsoft_locale', locale, { expires: 30 });
 	}
 
 
@@ -100,7 +100,8 @@ $(document).ready(function() {
 	==============================================*/
 
 	$(window).load(function(){
-		loadLocale(getLocale());
+		//loadLocale(getLocale());
+		loadLocale('en');
 		loadWPPosts();
 		$('#page-loader').fadeOut(loadTime);
 	});
