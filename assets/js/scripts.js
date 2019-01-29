@@ -101,7 +101,7 @@ $(document).ready(function() {
 
 	$(window).load(function(){
 		//loadLocale(getLocale());
-		loadLocale('en');
+		//loadLocale('en');
 		loadWPPosts();
 		$('#page-loader').fadeOut(loadTime);
 	});
