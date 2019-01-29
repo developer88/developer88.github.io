@@ -3,7 +3,7 @@ $(document).ready(function() {
     /*============================================
 	Settings
 	==============================================*/
-	var loadTime = 500;
+	var loadTime = 200;
 	var defaultLocale = 'en';
 	var cvLinks = {'en': "https://developer88.github.io/files/cv.eng.pdf", 'ru': "https://developer88.github.io/files/cv.rus.pdf"};
 
