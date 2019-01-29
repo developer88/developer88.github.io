@@ -5,7 +5,7 @@ $(document).ready(function() {
 	==============================================*/
 	var loadTime = 500;
 	var defaultLocale = 'en';
-	var cvLinks = {'en': "/files/cv.eng.pdf", 'ru': "/files/cv.rus.pdf"};
+	var cvLinks = {'en': "https://developer88.github.io/files/cv.eng.pdf", 'ru': "https://developer88.github.io/files/cv.rus.pdf"};
 
 	/*============================================
 	CV
@@ -25,7 +25,7 @@ $(document).ready(function() {
 		var i18n = $.i18n();
 
 		i18n.locale = locale;
-		i18n.load( 'assets/js/languages/' + i18n.locale + '.json', i18n.locale ).done(function() {
+		i18n.load( 'https://developer88.github.io/assets/js/languages/' + i18n.locale + '.json', i18n.locale ).done(function() {
 			$('[data-i18n]').each(function() { $(this).i18n(); });
 			//setLocale(locale);
 			loadLocaleDependableContent();
@@ -61,7 +61,7 @@ $(document).ready(function() {
 	==============================================*/
 
 	function loadWPPosts() {
-		jQuery.get("http://code.aeremin.ru/?json=1", function(data) { handleWPPosts(data); });
+		jQuery.get("https://aeremin.ru/?json=1", function(data) { handleWPPosts(data); });
 	}
 
 	function handleWPPosts(response){
