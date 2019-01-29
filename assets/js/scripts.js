@@ -50,9 +50,9 @@ $(document).ready(function() {
 
 
 	function loadLocaleDependableContent() {
-        changeCvLink();
-		loadTranslationsManually('data-i18n-tooltip', 'title');
-		loadTranslationsManually('data-i18n-heading');
+                //changeCvLink();
+		//loadTranslationsManually('data-i18n-tooltip', 'title');
+		//loadTranslationsManually('data-i18n-heading');
 		loadTooltips();
 	}
 
