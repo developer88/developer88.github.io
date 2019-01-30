@@ -260,7 +260,8 @@ $(document).ready(function() {
 
 		window.location.hash = '?'+projectLink;
 
-		$('#project-viewer-content').load(projectLink,function(){
+		// Hardcode url here. TODO: remove when move to different url
+		$('#project-viewer-content').load('https://developer88.github.io/' + projectLink,function(){
 			$('#project-viewer .container').fadeIn(loadTime);
 			afterLoadFn();
 		});
