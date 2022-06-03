@@ -1,1 +1,52 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: Andrey Eremin
+url: "http://aeremin.ru"
+google_analytics: "G-E7RN5F0GY0"
+# disqus_shortname: 'your-disqus-name'
+# disable_landing_page: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+gems:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
+
+author:
+  name: "Andrey Eremin"
+  twitter_username: dsoft88
+  linkedin_username: andreyeremin
+  medium_username: aeremin
+  devto_username: aeremin
+  telegram_username: senior_teamlead
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+exclude: ["README.md", "Gemfile", "Gemfile.lock", "screenshot.png", "LICENCE"]
