@@ -1,7 +1,8 @@
 # Site settings
 title: Andrey Eremin
-url: "http://aeremin.ru"
+url: "https://aeremin.ru"
 google_analytics: "G-E7RN5F0GY0"
+description: false
 # disqus_shortname: 'your-disqus-name'
 # disable_landing_page: true
 
