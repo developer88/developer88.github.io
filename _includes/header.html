@@ -35,17 +35,6 @@
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
-              {% if site.author.telegram_username %}
-              <!-- Medium -->
-              <li class="navigation__item">
-                <a href="https://t.me/{{ site.author.telegram_username }}"
-                  title="@{{ site.author.telegram_username }} on Telegram" target="_blank">
-                  <i class="icon icon-torso"></i>
-                  <span class="label">Telegram blog</span>
-                </a>
-              </li>
-              {% endif %}
-
               {% if site.author.medium_username %}
               <!-- Medium -->
               <li class="navigation__item">
@@ -53,17 +42,6 @@
                   title="@{{ site.author.medium_username }} on Medium" target="_blank">
                   <i class="icon icon-social-medium"></i>
                   <span class="label">Medium</span>
-                </a>
-              </li>
-              {% endif %}
-
-              {% if site.author.devto_username %}
-              <!-- Dev.to -->
-              <li class="navigation__item">
-                <a href="https://dev.to/{{ site.author.devto_username }}"
-                  title="@{{ site.author.devto_username }} on Dev.to" target="_blank">
-                  <i class="icon icon-page"></i>
-                  <span class="label">Dev.to</span>
                 </a>
               </li>
               {% endif %}
@@ -79,17 +57,6 @@
               </li>
               {% endif %}
 
-              {% if site.author.facebook_username %}
-              <!-- Facebook -->
-              <li class="navigation__item">
-                <a href="https://fb.me/{{ site.author.facebook_username }}"
-                  title="{{ site.author.facebook_username }} on Facebook" target="_blank">
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
-                </a>
-              </li>
-              {% endif %}
-
               {% if site.author.linkedin_username %}
               <!-- LinkedIn -->
               <li class="navigation__item">
@@ -97,6 +64,39 @@
                   title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
                   <i class="icon icon-social-linkedin"></i>
                   <span class="label">LinkedIn</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.telegram_username %}
+              <!-- Medium -->
+              <li class="navigation__item">
+                <a href="https://t.me/{{ site.author.telegram_username }}"
+                  title="@{{ site.author.telegram_username }} on Telegram" target="_blank">
+                  <i class="icon icon-torso"></i>
+                  <span class="label">Telegram blog</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.devto_username %}
+              <!-- Dev.to -->
+              <li class="navigation__item">
+                <a href="https://dev.to/{{ site.author.devto_username }}"
+                  title="@{{ site.author.devto_username }} on Dev.to" target="_blank">
+                  <i class="icon icon-page"></i>
+                  <span class="label">Dev.to</span>
+                </a>
+              </li>
+              {% endif %}
+
+              {% if site.author.facebook_username %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="https://fb.me/{{ site.author.facebook_username }}"
+                  title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
                 </a>
               </li>
               {% endif %}
