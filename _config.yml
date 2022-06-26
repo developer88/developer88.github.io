@@ -50,4 +50,14 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-exclude: ["README.md", "Gemfile", "Gemfile.lock", "screenshot.png", "LICENCE"]
+exclude:
+  [
+    "README.md",
+    "Gemfile",
+    "Gemfile.lock",
+    "screenshot.png",
+    "LICENCE",
+    "humans.txt",
+    "docker-compose.yml",
+    "CNAME",
+  ]
